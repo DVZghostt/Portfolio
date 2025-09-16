@@ -35,12 +35,6 @@ label
     display: none;
 }
  
-
-label, #toggle
-{
-    display: none;
-}
- 
 @media all and (max-width: 991px)
 {
     nav
@@ -51,13 +45,6 @@ label, #toggle
     nav .main_menu
     {
         display: none;
-        flex-direction: column;
-        background: #48435C;
-        height: 220px;
-    }
- 
-    nav .main_menu a {
-        width: 50%;
     }
  
     label 
@@ -70,9 +57,5 @@ label, #toggle
         font-size: 40px;
         color: white;
         cursor: pointer;
-    }
- 
-    #toggle:checked + .main_menu {
-        display: flex;
     }
 }
