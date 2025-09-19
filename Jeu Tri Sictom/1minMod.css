@@ -1,0 +1,268 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #5cbf63;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+#game-area {
+    position: relative;
+    height: 500px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+#bins {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.bin-j {
+    width: 120px;
+    height: 120px;
+    background-color: #bbb500;
+    border: 2px solid #333;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.bin-v {
+    width: 120px;
+    height: 120px;
+    background-color: #00af3d;
+    border: 2px solid #333;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.bin-g {
+    width: 120px;
+    height: 120px;
+    background-color: #615f5f;
+    border: 2px solid #333;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.bin-d {
+    width: 120px;
+    height: 120px;
+    background-color: #000000;
+    border: 2px solid #333;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.bin-c {
+    width: 120px;
+    height: 120px;
+    background-color: #8b4100;
+    border: 2px solid #333;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+#trash-item {
+    font-size: 60px;
+    cursor: grab;
+    margin: 50px 0;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100%;
+  background-color: #a0522d; /* marron */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  color: white;
+  font-family: 'Arial Black', sans-serif;
+}
+
+#sidebar h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #fff;
+}
+
+.side-button {
+  width: 60px;
+  height: 60px;
+  background-color: #2ecc71; /* vert clair */
+  margin-bottom: 15px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.side-button:hover {
+  transform: scale(1.1);
+}
+
+#gain-feedback {
+  position: absolute;
+  font-size: 28px;
+  color: #00ff88;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+
+#erreur-feedback {
+  position: absolute;
+  font-size: 28px;
+  color: #ff0000;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+
+#buble-help {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 100%;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Overlay plein écran */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Fond sombre transparent */
+  backdrop-filter: blur(5px);     /* Flou d’arrière-plan */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Contenu de l’overlay */
+.overlay-content {
+  background: rgb(1, 136, 30);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Boutons dans l’overlay */
+.overlay-content button {
+  margin: 10px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #66bb6a;
+  border: none;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.overlay-content button:hover {
+  background-color: #43a047;
+}
+
+/* Overlay plein écran */
+#end-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  display: none; /* 🔴 cacher par défaut */
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+
+/* Contenu de l’overlay */
+.end-overlay-content {
+  background: rgb(1, 136, 30);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Boutons dans l’overlay */
+.end-overlay-content button {
+  margin: 10px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #66bb6a;
+  border: none;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.end-overlay-content button:hover {
+  background-color: #43a047;
+}
+
+#timer {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #43a047;
+  padding: 15px 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: fit-content;
+  margin: 20px auto;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  border: 3px solid #66bb6a;
+  animation: pulse 1s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.9; }
+  100% { transform: scale(1); opacity: 1; }
+}
