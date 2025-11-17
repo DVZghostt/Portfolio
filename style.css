@@ -16,6 +16,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    backdrop-filter: none !important;
+    filter: none !important;
 }
 
 
@@ -32,6 +34,7 @@ body {
 body::before {
     content: '';
     position: fixed;
+    display: none !important;
     top: 0;
     left: 0;
     width: 100%;
@@ -54,6 +57,7 @@ body::before {
 body::after {
     content: '';
     position: fixed;
+    display: none !important;
     top: 0;
     left: 0;
     width: 100%;
@@ -85,7 +89,7 @@ body::after {
 
 .navbar {
     background: linear-gradient(135deg, rgba(10, 14, 39, 0.98), rgba(26, 31, 58, 0.95)) !important;
-    backdrop-filter: blur(20px) saturate(180%);
+    backdrop-filter: none !important;
     border-bottom: 2px solid transparent;
     border-image: linear-gradient(90deg, var(--primary), var(--accent), var(--secondary)) 1;
     position: sticky;
@@ -93,6 +97,7 @@ body::after {
     z-index: 1000;
     box-shadow: 0 8px 32px rgba(255, 107, 53, 0.2);
     animation: navSlideDown 0.5s ease-out;
+    
 }
 
 @keyframes navSlideDown {
@@ -206,7 +211,7 @@ section {
 
 .info-box {
     background: linear-gradient(135deg, rgba(26, 31, 58, 0.9), rgba(10, 14, 39, 0.8));
-    backdrop-filter: blur(15px) saturate(150%);
+    backdrop-filter: none !important;
     border: 2px solid rgba(255, 107, 53, 0.2);
     border-radius: 20px;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
