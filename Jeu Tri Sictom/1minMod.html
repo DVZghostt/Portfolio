@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -58,4 +59,66 @@
     <script src="1minMod.js"></script>
     
 </body>
+=======
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href = "1minMod.css">
+</head>
+<body>
+
+    <div id="overlay">
+        <div class="overlay-content">
+            <h1>♻️ Jeu de tri des déchets</h1>
+            <button onclick="startGame()">🚀 Commencer</button>
+            <button onclick="quitGame()">❌ Quitter</button>
+        </div>
+    </div>
+
+    <div id="end-overlay">
+        <div class="end-overlay-content">
+            <h1>♻️ Stats</h1>
+            <div id="score">😁 Score : 0</div>
+            <div id="erreur">😡 erreur : 0</div>
+            <button onclick="startGame()">🚀 Commencer</button>
+            <button onclick="quitGame()">❌ Quitter</button>
+        </div>
+    </div>
+
+    <div id="timer">
+        ⏳ Temps restant : 60s
+    </div>
+
+    <h1>♻️ Jeu de tri des dechets</h1>
+
+    <div id="money">
+        💰 Money : 0
+    </div>
+    <div id="score">
+        😁 Score : 0
+    </div>
+    <div id="gain-feedback"></div>
+    <div id="erreur">
+        😡 erreur : 0
+    </div>
+    <div id="erreur-feedback"></div>
+
+    <div id="game-area">
+        <div id ="trash-item" draggable="true">🍏</div>
+        <div id="bins">
+            <div class="bin-j" id="bin-jaune" ondrop="drop(event)" ondragover="allowDrop(event)">Poubelle Jaune</div>
+            <div class="bin-v" id="bin-verte" ondrop="drop(event)" ondragover="allowDrop(event)">Poubelle Verte</div>
+            <div class="bin-g" id="bin-grise" ondrop="drop(event)" ondragover="allowDrop(event)">Poubelle Grise</div>
+            <div class="bin-d" id="bin-dechet" ondrop="drop(event)" ondragover="allowDrop(event)">Decheterie</div>
+            <div class="bin-c" id="bin-compost" ondrop="drop(event)" ondragover="allowDrop(event)">Composteur</div>
+        </div>
+    </div>
+
+    <script src="1minMod.js"></script>
+    
+</body>
+>>>>>>> 805e55e0415894b8735caf9e220819eda18b9887
 </html>
