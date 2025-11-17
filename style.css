@@ -23,7 +23,7 @@
 
 body {
     font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
-    background: #0a0e27;
+    background: #0a0e27 !important;
     color: var(--text-light);
     min-height: 100vh;
     position: relative;
