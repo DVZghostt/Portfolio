@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-/* === VARIABLES ET CONFIGURATION === */
+
 :root {
     --primary: #ff6b35;
     --primary-dark: #e85d2a;
@@ -19,7 +18,7 @@
     box-sizing: border-box;
 }
 
-/* === ARRIÈRE-PLAN DYNAMIQUE ULTRA-MODERNE === */
+
 body {
     font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
     background: #0a0e27;
@@ -29,7 +28,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Effet de grille futuriste */
+
 body::before {
     content: '';
     position: fixed;
@@ -51,7 +50,7 @@ body::before {
     100% { transform: translate(50px, 50px); }
 }
 
-/* Orbes lumineuses animées */
+
 body::after {
     content: '';
     position: fixed;
@@ -83,7 +82,7 @@ body::after {
     }
 }
 
-/* === NAVIGATION EXPLOSIVE === */
+
 .navbar {
     background: linear-gradient(135deg, rgba(10, 14, 39, 0.98), rgba(26, 31, 58, 0.95)) !important;
     backdrop-filter: blur(20px) saturate(180%);
@@ -194,7 +193,7 @@ body::after {
     transform: translateY(-50%) scale(1);
 }
 
-/* === CONTENEURS === */
+
 section {
     position: relative;
     z-index: 1;
@@ -204,7 +203,7 @@ section {
     max-width: 1400px;
 }
 
-/* === CARTES DYNAMIQUES ULTRA-IMPACTANTES === */
+
 .info-box {
     background: linear-gradient(135deg, rgba(26, 31, 58, 0.9), rgba(10, 14, 39, 0.8));
     backdrop-filter: blur(15px) saturate(150%);
@@ -219,7 +218,7 @@ section {
         inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
-/* Effet de néon pulsant */
+
 .info-box::before {
     content: '';
     position: absolute;
@@ -241,7 +240,7 @@ section {
     left: 100%;
 }
 
-/* Bordure lumineuse animée */
+
 .info-box::after {
     content: '';
     position: absolute;
@@ -280,7 +279,7 @@ section {
     opacity: 1;
 }
 
-/* Indicateur de côté énergique */
+
 .info-box .indicator {
     position: absolute;
     left: 0;
@@ -297,7 +296,7 @@ section {
     50% { background-position: 0% 100%; }
 }
 
-/* === TYPOGRAPHIE PUISSANTE === */
+
 h3 {
     color: var(--text-light);
     font-weight: 900;
@@ -355,7 +354,7 @@ strong {
     background-clip: text;
 }
 
-/* === LISTES STYLÉES === */
+
 ul {
     list-style: none;
     padding-left: 0;
@@ -393,7 +392,7 @@ li:hover {
     color: var(--text-light);
 }
 
-/* === LIENS ÉNERGIQUES === */
+
 a.text-decoration-none {
     color: var(--accent);
     font-weight: 700;
@@ -428,13 +427,13 @@ a.text-decoration-none:hover::before {
     transform: translateX(5px);
 }
 
-/* === GRILLE RESPONSIVE === */
+
 .row {
     --bs-gutter-x: 2rem;
     --bs-gutter-y: 2rem;
 }
 
-/* === ANIMATIONS D'ENTRÉE DYNAMIQUES === */
+
 @keyframes slideInUp {
     from {
         opacity: 0;
@@ -491,7 +490,7 @@ a.text-decoration-none:hover::before {
 .col-md-12:nth-child(4) .info-box { animation-delay: 0.4s; }
 .col-md-12:nth-child(5) .info-box { animation-delay: 0.5s; }
 
-/* === SCROLLBAR ULTRA-STYLÉE === */
+
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -513,14 +512,13 @@ a.text-decoration-none:hover::before {
     box-shadow: 0 0 20px rgba(0, 255, 136, 0.7);
 }
 
-/* === EFFET PARALLAXE SUR SCROLL === */
+
 @media (prefers-reduced-motion: no-preference) {
     html {
         scroll-behavior: smooth;
     }
 }
 
-/* === RESPONSIVE OPTIMISÉ === */
 @media (max-width: 768px) {
     h3 {
         font-size: 1.4rem;
@@ -543,7 +541,7 @@ a.text-decoration-none:hover::before {
     }
 }
 
-/* === TOUCHES FINALES ÉNERGIQUES === */
+
 .shadow {
     box-shadow: 
         0 15px 45px rgba(0, 0, 0, 0.4),
@@ -554,7 +552,7 @@ a.text-decoration-none:hover::before {
     background: linear-gradient(135deg, var(--dark), var(--dark-light)) !important;
 }
 
-/* === EFFET DE PARTICULES FLOTTANTES === */
+
 @keyframes float {
     0%, 100% { 
         transform: translateY(0) rotate(0deg);
@@ -571,7 +569,6 @@ a.text-decoration-none:hover::before {
     animation: float 4s ease-in-out infinite;
 }
 
-/* === INDICATEUR VISUEL === */
 .info-box .indicator {
     content: '';
     position: absolute;
@@ -587,7 +584,7 @@ a.text-decoration-none:hover::before {
 .info-box:hover .indicator {
     opacity: 1;
 }
-=======
+
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff !important;
@@ -608,4 +605,4 @@ body {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.35);
 }
->>>>>>> 805e55e0415894b8735caf9e220819eda18b9887
+
